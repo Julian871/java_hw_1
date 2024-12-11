@@ -3,7 +3,7 @@ public class Book {
     private final String title;
     private final String author;
     private final int year;
-    private boolean isAvailable = true;
+    private boolean isAvailable;
 
     public Book(String title, String author, int year, boolean isAvailable) {
         this.title = title;
@@ -16,6 +16,7 @@ public class Book {
         this.title = title;
         this.author = author;
         this.year = 2024;
+        this.isAvailable = true;
     }
 
     public String getTitle() {
@@ -26,16 +27,24 @@ public class Book {
         return author;
     }
 
-    public boolean getIsAvailable() {
+    public boolean isAvailable() {
         return isAvailable;
     }
 
     public void borrowBook(){
-        this.isAvailable = false;
+        if(!this.isAvailable) {
+            System.out.println("This book does not exist");
+        } else {
+            this.isAvailable = false;
+        }
     }
 
     public void returnBook() {
-        this.isAvailable = true;
+        if(this.isAvailable) {
+            System.out.println("This book is in place");
+        } else {
+            this.isAvailable = true;
+        }
     }
 
     public void displayInfo() {

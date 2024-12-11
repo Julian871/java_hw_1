@@ -27,7 +27,7 @@ public class Library {
 
     public void printAvailableBooks() {
         List<Book> booksList = books.stream()
-                .filter(Book::getIsAvailable)
+                .filter(Book::isAvailable)
                 .toList();
 
         if (booksList.isEmpty()) {
