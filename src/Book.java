@@ -2,8 +2,8 @@
 public class Book {
     private final String title;
     private final String author;
-    private final int year;
-    private boolean isAvailable;
+    private final Integer year;
+    private Boolean isAvailable;
 
     public Book(String title, String author, int year, boolean isAvailable) {
         this.title = title;
