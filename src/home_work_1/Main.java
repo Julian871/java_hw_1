@@ -1,11 +1,13 @@
+package home_work_1;
+
 public class Main {
     public static void main(String[] args) {
 
         // 5.1 Создайте несколько книг с использованием разных конструкторов.
-        Book book1 = new Book("Book 1", "Julian");
-        Book book2 = new Book("Book 2", "Aston");
-        Book book3 = new Book("Book 3", "Oscar", 2000, false);
-        Book book4 = new Book("Book 4", "Julian", 2024, false);
+        Book book1 = new Book("home_work_1.Book 1", "Julian");
+        Book book2 = new Book("home_work_1.Book 2", "Aston");
+        Book book3 = new Book("home_work_1.Book 3", "Oscar", 2000, false);
+        Book book4 = new Book("home_work_1.Book 4", "Julian", 2024, false);
 
         // 5.2 Добавьте их в библиотеку.
         Library library = Library.getLibrary();

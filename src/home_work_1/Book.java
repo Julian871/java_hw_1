@@ -1,3 +1,4 @@
+package home_work_1;
 
 public class Book {
     private final String title;
@@ -48,7 +49,7 @@ public class Book {
     }
 
     public void displayInfo() {
-        System.out.printf("Book information:\n\tTitle - %s\n\tAuthor - %s\n\tYear - %d\n\t%s for issue%n",
+        System.out.printf("home_work_1.Book information:\n\tTitle - %s\n\tAuthor - %s\n\tYear - %d\n\t%s for issue%n",
                 title, author, year, isAvailable ? "Available" : "Unavailable");
     }
 }

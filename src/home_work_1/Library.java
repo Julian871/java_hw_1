@@ -1,3 +1,5 @@
+package home_work_1;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -12,8 +14,8 @@ public class Library {
     static {
         library = new Library();
         System.out.println("Loading books...");
-        library.addBook(new Book("Static book 1", "Library"));
-        library.addBook(new Book("Static book 2", "Library", 1000, false));
+        library.addBook(new Book("Static book 1", "home_work_1.Library"));
+        library.addBook(new Book("Static book 2", "home_work_1.Library", 1000, false));
     }
 
     public static Library getLibrary() {
